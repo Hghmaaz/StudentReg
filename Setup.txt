@@ -1,0 +1,130 @@
+Setting Up the ASP.NET Web Application Development Environment
+
+
+
+1. Introduction
+This document provides step-by-step instructions on setting up the development environment for the 'StudentReg' ASP.NET web application. It covers software installation, environment configuration, cloning the Git repository, and running the application.
+
+
+2. Prerequisites
+A Windows operating system (Windows 10 or later is recommended)
+Administrative privileges to install software
+
+
+3. Required Software
+.NET SDK
+Visual Studio 2022 (or later)
+SQL Server Express (Optional for database integration)
+Git (Optional for version control)
+
+
+4. Installing .NET SDK
+Download .NET SDK:
+
+Visit the .NET SDK download page.
+Download the latest stable version of the .NET SDK.
+Install .NET SDK:
+
+Run the downloaded installer.
+Follow the on-screen instructions to complete the installation.
+Verify .NET SDK Installation:
+
+Open Command Prompt or PowerShell.
+Run the command:  dotnet --version
+
+
+
+5. Installing Visual Studio
+Download Visual Studio:
+
+Visit the Visual Studio download page.
+Download the Community, Professional, or Enterprise edition as per your requirement.
+
+
+Install Visual Studio:
+
+Run the Visual Studio installer.
+During the installation, select the following workloads:
+ASP.NET and web development
+.NET Core cross-platform development
+Follow the on-screen instructions to complete the installation.
+Verify Visual Studio Installation:
+
+Open Visual Studio.
+Go to Help > About Microsoft Visual Studio.
+Ensure the installed version is listed correctly.
+
+
+6. Optional: Installing SQL Server Express
+Download SQL Server Express:
+
+Visit the SQL Server Express download page.
+Install SQL Server Express:
+
+Run the downloaded installer.
+Choose the Basic installation type for a quick setup.
+Follow the on-screen instructions to complete the installation.
+Install SQL Server Management Studio (SSMS):
+
+Visit the SSMS download page.
+Download and install SSMS.
+Verify SQL Server Installation:
+
+Open SSMS.
+Connect to the SQL Server instance using (local)\SQLEXPRESS as the server name.
+
+
+
+7. Optional: Installing Git
+Download Git:
+
+Visit the Git download page.
+Install Git:
+
+Run the downloaded installer.
+Follow the on-screen instructions to complete the installation.
+Verify Git Installation:
+
+Open Command Prompt or PowerShell.
+Run the command:   git --version
+
+
+
+8. Cloning the Git Repository
+
+Clone the Repository:
+
+Open Command Prompt, PowerShell, or Git Bash.
+Run the following command, replacing <repository-link> with the actual link you received:
+
+"git clone <repository-link>"
+
+eg: git clone https://github.com/yourusername/StudentReg.git
+
+
+Navigate to the Project Directory:
+
+Change directory to the cloned repository: "cd StudentReg"
+
+
+9. Setting Up the Project in Visual Studio
+
+Open Visual Studio:
+Launch Visual Studio.
+
+Open the Cloned Project:
+
+Go to File > Open > Project/Solution.
+Navigate to the 'StudentReg' directory and open the '.sln' file
+
+Restore NuGet Packages:
+
+Visual Studio should automatically restore the NuGet packages. If not, go to Tools > NuGet 'Package Manager' > 'Package Manager Console' and run:
+
+Run the Application:
+
+Press 'F5' or click the Run button to start the application.
+The application should launch in your default web browser.
+
+10. Conclusion
+By following these steps, you have successfully set up your development environment for the 'StudentReg' ASP.NET web application. You are now ready to start developing and running the application.
