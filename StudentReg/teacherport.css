@@ -1,0 +1,73 @@
+﻿
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.page-background {
+    background-color: #f0f2f5; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out; /* Transition for shadow */
+}
+
+    .container:hover {
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35); /* Increased shadow on hover */
+        transform: translateY(-5px); /* Move container up slightly */
+    }
+
+.class {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid transparent;
+    transition: border-left-color 0.3s ease-in-out;
+}
+
+    .class h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    .class.excellent {
+        border-left-color: #28a745; /* Green */
+    }
+
+    .class.average {
+        border-left-color: #ffc107; /* Yellow */
+    }
+
+    .class.poor {
+        border-left-color: #dc3545; /* Red */
+    }
+
+.students-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+    .students-list li {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: #555;
+    }

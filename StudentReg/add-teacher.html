@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Teacher</title>
+    <link rel="stylesheet" href="add-teacher.css">
+</head>
+<body>
+    </div>
+    <div class="container">
+        <form class="form" id="studentForm">
+            <span class="title">Add New Teacher</span>
+
+            <label for="name" class="label">Name</label>
+            <input type="text" id="name" name="name" required="" class="input">
+
+            <label for="address" class="label">Address</label>
+            <input type="text" id="address" name="address" required="" class="input">
+
+            <label for="contact" class="label">Contact</label>
+            <input type="tel" id="contact" name="contact" required="" class="input">
+
+
+
+            <button type="submit" class="submit">Add Teacher</button>
+        </form>
+
+        <table class="table" id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Simulate loading time
+    setTimeout(function() {
+        document.querySelector('.loadingspinner').style.display = 'none';
+        document.querySelector('.container').style.display = 'block';
+    }, 3000); // timeout duration 
+});
+    </script>
+
+    <script src="add-student.js"></script>
+</body>
+</html>
